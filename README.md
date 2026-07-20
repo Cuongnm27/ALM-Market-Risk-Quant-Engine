@@ -1,5 +1,3 @@
-# ALM-Market-Risk-Quant-Engine
-End-to-End Market Risk &amp; Fixed Income Pricing Engine using Python, BigQuery, and Power BI
 # 🏦 FIXED INCOME ALM & MARKET RISK ENGINE 
 *(Hệ thống Lượng hóa Rủi ro Thị trường & Lãi suất sổ Ngân hàng)*
 
@@ -10,6 +8,7 @@ End-to-End Market Risk &amp; Fixed Income Pricing Engine using Python, BigQuery,
 
 ## 🚀 1. EXECUTIVE SUMMARY (Tóm tắt hệ thống)
 Hệ thống được thiết kế để tự động hóa việc đo lường hai rủi ro cốt lõi theo chuẩn mực Basel III / FRTB:
+
 1. **Market Risk (Đa tài sản):** Lượng hóa rủi ro đuôi (Tail-risk) bằng các mô hình VaR Nâng cao và thiết lập tỷ lệ phòng vệ (Hedging) bằng Phái sinh.
 2. **Fixed Income Risk (IRRBB):** Nội suy Đường cong lợi suất (Yield Curve Bootstrapping), lượng hóa độ nhạy giá (Modified Duration, Convexity), và chạy Stress Test (sốc lãi suất) để đo lường mức sụt giảm Vốn chủ sở hữu (**Delta EVE**).
 
