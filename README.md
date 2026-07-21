@@ -10,13 +10,13 @@
 Hệ thống được thiết kế để tự động hóa việc đo lường hai rủi ro cốt lõi theo chuẩn mực Basel III / FRTB:
 
 1. **Market Risk (Đa tài sản):** Lượng hóa rủi ro đuôi (Tail-risk) bằng các mô hình VaR Nâng cao và thiết lập tỷ lệ phòng vệ (Hedging) bằng Phái sinh.
-![Dashboard Market Risk](Dashboard_Market_Risk.png)
-2. **Fixed Income Risk (IRRBB):** Nội suy Đường cong lợi suất (Yield Curve Bootstrapping), lượng hóa độ nhạy giá (Modified Duration, Convexity), và chạy Stress Test (sốc lãi suất) để đo lường mức sụt giảm Vốn chủ sở hữu (**Delta EVE**).
-![Dashboard Stress Test](Dashboard_stress_testing.png)
-## ⚙️ 2. SYSTEM ARCHITECTURE (Kiến trúc Dữ liệu End-to-End)
-![Pineline Architecture](bond_risk_pipeline_architecture.png)
+![Dashboard Market Risk](./Project_1_Multi_Asset_Market_Risk/Dashboard_Market_Risk.png)
 
-![Pineline Architecture](bond_risk_pipeline_architecture.png)
+2. **Fixed Income Risk (IRRBB):** Nội suy Đường cong lợi suất (Yield Curve Bootstrapping), lượng hóa độ nhạy giá (Modified Duration, Convexity), và chạy Stress Test (sốc lãi suất) để đo lường mức sụt giảm vốn chủ sở hữu (**Delta EVE**).
+![Dashboard Stress Test](./Project_2_Fixed_Income_ALM/Dashboard_Bond.png)
+
+## ⚙️ 2. SYSTEM ARCHITECTURE (Kiến trúc Dữ liệu End-to-End)
+![Pipeline Architecture](./Project_2_Fixed_Income_ALM/bond_risk_pipeline_architecture.png)
 
 Hệ thống vận hành hoàn toàn tự động (Automated EOD Batch) theo luồng:
 *   **Extract:** `Python` cào dữ liệu qua API (yfinance, DNSE) và thuật toán Random Walk (Risk-free rates).
